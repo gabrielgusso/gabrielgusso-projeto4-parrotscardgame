@@ -1,91 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #eef9bf;
-    font-family: 'Roboto', sans-serif;
-    color: #75B79E;
+  background-color: #eef9bf;
+  font-family: "Roboto", sans-serif;
+  color: #75b79e;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .title {
-    font-size: 56px;
-    width: 600px;
-    display: flex;
-    justify-content: center;
+  font-size: 56px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
 }
 
-
 .cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 50px 0 0 0;
-    padding: 0;
-    height: 390px;
-    width: 50%;
-    flex-wrap: wrap;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 50px 0 0 0;
+  padding: 0;
+  height: 350px;
+  width: 50%;
+  flex-wrap: wrap;
 }
 
 .card {
-    width: 130px;
-    height: 146px;
-    justify-content: center;
-    position: relative;
+  width: 130px;
+  height: 146px;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 34px;
 }
 
 .card img {
-    width: 100px;
+  width: 100px;
 }
 
 .face {
-    width: 100%;
-    height: 100%;
-    background-color: #A7E9AF;
-    border: 1px solid #99CEA8;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    backface-visibility: hidden;
-    transition: all .5s;
-    transform-style: preserve-3d;
-  }
+  width: 100%;
+  height: 100%;
+  background-color: #a7e9af;
+  border: 1px solid #99cea8;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all 0.5s;
+  transform-style: preserve-3d;
+}
 
-  .first {
-    z-index: 1;
-  }
+.first {
+  z-index: 1;
+}
 
-  .back-face-default {
-    transform: rotateY(180deg);
-  }
+.back-face-default {
+  transform: rotateY(180deg);
+}
 
-  .card .back-face {
-    transform: rotateY(0deg);
-  }
+.card .back-face {
+  transform: rotateY(0deg);
+}
 
-  .card .front-face {
-    transform: rotateY(-180deg);
-  }
-
-
+.card .front-face {
+  transform: rotateY(-180deg);
+}
 
 @media (max-width: 540px) {
-    
-    .title{font-size: 36px;
-        width: 300px;
-        text-align: center;
-    }
+  .title {
+    font-size: 36px;
+    width: 300px;
+    text-align: center;
+  }
 }
